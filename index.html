@@ -9,9 +9,30 @@
 <body>
 
   <header>
-    <nav>
-
+    <div class="logo-holder">
+      <img src="assets/images/ic-logo.svg" alt="logo">
+      <p><span>COLMAR</span>ACADEMY</p>
+    </div>
+    <nav class="nav-desktop">
+      <a>On campus</a>
+      <a>Online</a>
+      <a>For companies</a>
+      <a>Sign in</a>
     </nav>  
+    <nav class="nav-mobile">
+      <a href="">
+        <img src="assets/images/ic-logo.svg" alt="logo icon">
+      </a>
+      <a href="">
+        <img src="assets/images/ic-on-campus.svg" alt="campus icon">
+      </a>
+      <a href="">
+        <img src="assets/images/ic-online.svg" alt="online icon">
+      </a>
+      <a href="">
+        <img src="assets/images/ic-login.svg" alt="login icon">
+      </a>
+    </nav>
   </header>
 
   <main>
@@ -44,9 +65,10 @@
       </div>
 
       <div class="info-small">
-        <article>
+        <article class="orientation">
           <figure>
-            <img src="assets/images/information-orientation.jpg" alt="Info Orientation Pic" width="100%">
+            <img class="desktop" src="assets/images/information-orientation.jpg" alt="Info Orientation Pic" width="100%">
+            <img class="mobile" src="assets/images/information-orientation-mobile.jpg" alt="Info Orientation Pic Mobile" width="100%">
           </figure>
           <div class="info-small-text">
             <h3>Orientation date</h3>
@@ -54,9 +76,10 @@
             <a href="">Read more</a>
           </div>
         </article>
-        <article>
+        <article class="campus">
           <figure>
-            <img src="assets/images/information-campus.jpg" alt="Info Campus Pic" width="100%">
+            <img class="desktop" src="assets/images/information-campus.jpg" alt="Info Campus Pic" width="100%">
+            <img class="mobile" src="assets/images/information-campus-mobile.jpg" alt="Info Campus Pic Mobile" width="100%">
           </figure>
           <div class="info-small-text">
             <h3>Our Campus</h3>
@@ -64,9 +87,10 @@
             <a href="">Read more</a>
           </div>
         </article>
-        <article>
+        <article class="guest-lect">
           <figure>
-            <img src="assets/images/information-guest-lecture.jpg" alt="Info Guest Lecture Pic" width="100%">
+            <img class="desktop" src="assets/images/information-guest-lecture.jpg" alt="Info Guest Lecture Pic" width="100%">
+            <img class="mobile" src="assets/images/information-guest-lecture-mobile.jpg" alt="Info Guest Lecture Pic Mobile" width="100%">
           </figure>
           <div class="info-small-text">
             <h3>Our Guest Lecture</h3>
@@ -80,54 +104,71 @@
     <section class="course">
       <h2>Start learning</h2>
       <div class="courses-all">
-        <article class="software-engineering">
-          <figure>
-            <img src="assets/images/course-software.jpg" alt="Software Engineering" width="100%">
-          </figure>
-          <h3>Software engineering</h3>
-          <p>COURSES</p>
-          <p>Web Development, Mobile Development, iOT, APIs</p>
-        </article>  
-        <article class="computer-art">
-          <figure>
-            <img src="assets/images/course-computer-art.jpg" alt="Computer Art" width="100%">
-          </figure>
-          <h3>Computer art</h3>
-          <p>COURSES</p>
-          <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-        </article>  
-        <article class="design">
-          <figure>
-            <img src="assets/images/course-design.jpg" alt="Design" width="100%">
-          </figure>
-          <h3>Design</h3>
-          <p>COURSES</p>
-          <p>User Experience Design, User Research, Visual Design</p>
-        </article>  
-        <article class="data">
-          <figure>
-            <img src="assets/images/course-data.jpg" alt="Data" width="100%">
-          </figure>
-          <h3>Data</h3>
-          <p>COURSES</p>
-          <p>Data Science, Big Data, SQL, Data Visualization</p>
-        </article>  
-        <article class="business">
-          <figure>
-            <img src="assets/images/course-business.jpg" alt="Business" width="100%">
-          </figure>
-          <h3>Business</h3>
-          <p>COURSES</p>
-          <p>Product Development, Business Development, Startup</p>
-        </article>  
-        <article class="marketing">
-          <figure>
-            <img src="assets/images/course-marketing.jpg" alt="Marketing" width="100%">
-          </figure>
-          <h3>Marketing</h3>
-          <p>COURSES</p>
-          <p>Analytics, Content Marketing, Mobile Marketing</p>
-        </article>  
+        <div class="courses-row row-1">
+          <article class="software-engineering">
+            <figure>
+              <img src="assets/images/course-software.jpg" alt="Software Engineering" width="100%">
+            </figure>
+            <div class="course-text">
+              <h3>Software engineering</h3>
+              <p>COURSES</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </article>  
+          <article class="computer-art">
+            <figure>
+              <img src="assets/images/course-computer-art.jpg" alt="Computer Art" width="100%">
+            </figure>
+            <div class="course-text">
+              <h3>Computer art</h3>
+              <p>COURSES</p>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            </div>
+          </article>  
+          <article class="design">
+            <figure>
+              <img src="assets/images/course-design.jpg" alt="Design" width="100%">
+            </figure>
+            <div class="course-text">
+              <h3>Design</h3>
+              <p>COURSES</p>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </article>  
+        </div>
+        
+        <div class="courses-row row-2">
+          <article class="data">
+            <figure>
+              <img src="assets/images/course-data.jpg" alt="Data" width="100%">
+            </figure>
+            <div class="course-text">
+              <h3>Data</h3>
+              <p>COURSES</p>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </article>  
+          <article class="business">
+            <figure>
+              <img src="assets/images/course-business.jpg" alt="Business" width="100%">
+            </figure>
+            <div class="course-text">
+              <h3>Business</h3>
+              <p>COURSES</p>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </article>  
+          <article class="marketing">
+            <figure>
+              <img src="assets/images/course-marketing.jpg" alt="Marketing" width="100%">
+            </figure>
+            <div class="course-text">
+              <h3>Marketing</h3>
+              <p>COURSES</p>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </article>  
+        </div>
       </div>
     </section>
 
@@ -135,7 +176,7 @@
       <h2>Thesis exhibit</h2>
       <div class="thesis-container">
         <div class="thesis-main">
-          <video src="assets/videos/thesis.mp4">Video could not be displayed</video>
+          <video controls src="assets/videos/thesis.mp4" width="100%">Video could not be displayed</video>
           <h3>Reimagine urban</h3>
           <p>
             "Curabitur vitae libero in ipsum porttitor consequat. 
@@ -145,7 +186,7 @@
           </p>
         </div>
         <div class="thesis-small">
-          <article>
+          <article class="fisma">
             <figure>
               <img src="assets/images/thesis-fisma.jpg" alt="Thesis Fisma" width="100%">
             </figure>
@@ -170,7 +211,7 @@
 
   <footer>
     <div class="copyright">
-      <p>©2016 Colmar Academy. All rights</p>
+      <p>©2016 Colmar Academy. All rights reserved</p>
     </div>    
     <div class="terms-and-privacy">
       <p>Terms</p>
